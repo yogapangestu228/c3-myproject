@@ -1,0 +1,235 @@
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    background-color: black;
+    width: 100%;
+    overflow-y: visible;
+    overflow-x: hidden;
+    user-select: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image:url('assets/main-bg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: bottom;   
+}
+
+nav {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white !important;
+
+
+}
+
+.navigation a:hover {
+    color: #FBB341 !important;
+
+}
+
+.nav-item,
+.navbar-dark,
+.nav-link {
+    color: white !important;
+}
+
+.nav-item:hover,
+#logo:hover {
+    color: #FBB341 !important;
+}
+
+.nav-style {
+    background-color: rgba(0, 0, 0, 0.75);
+    
+
+}
+
+.header-info {
+    /* margin-top: 10%; */
+    width: 100%;
+    height: 90%;
+    color: white;
+    text-align: center;
+    /* border: yellow 1px solid; */
+}
+
+.header-title-info {
+    width: 100%;
+    font-family: 'Bebas Neue';
+    padding-top: 10%;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 3.5625rem;
+}
+
+.mini-info {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    flex: 1;
+    margin-bottom: 3.5625rem;
+}
+
+
+.header-info-button:hover {
+    background-color: #E0A800;
+}
+
+.header-scroll-link-wrapper {
+    text-decoration: none;
+    color: white;
+}
+
+.story-scroll-down {
+    margin-bottom: 3.5rem;
+}
+
+.story-scroll-down a {
+    text-decoration: none;
+    color: white;
+}
+
+.story-scroll-down a:hover {
+    color: wheat;
+    text-decoration: none;
+}
+
+.header-scroll-toggle {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.story-scroll-down {
+    animation: scrollDown 1.2s infinite;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.5);
+    }
+
+    25% {
+        transform: scale(0.8);
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.spacing {
+    background-color: black;
+}
+
+.games {
+    width: 100%;
+    height: 100vh;
+    background-image:
+        radial-gradient(circle at right, #000, transparent),
+    url('assets/the-games-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.games-content {
+    padding-top: 10%;
+    flex-direction: row;
+    width: 90vw !important;
+}
+
+.gl-left-side {
+
+    color: white;
+    max-width: 30vw !important;
+    /* border: yellow 1px solid; */
+}
+
+.gl-right-side {
+    margin-top: 5rem;
+}
+
+.games-mini-info {
+    font-size: 1.5rem;
+}
+
+.gl-h1-info {
+    font-size: 3.5rem;
+    line-height: 1.5rem;
+}
+
+.carousel-indicators li {
+    height: 1rem !important;
+    width: 1rem !important;
+    border-radius: 50% !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+}
+
+.carousel-indicators button {
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+}
+
+.icon-costum-left {
+    margin-left: -6rem;
+}
+
+.icon-costum-right {
+    margin-right: -6rem;
+}

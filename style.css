@@ -1,9 +1,9 @@
-h1 {
+/* h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 80px;
-}
+} */
 
-h2 {
+/* h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 36px;
 }
@@ -15,31 +15,29 @@ h3 {
 
 body {
     font-family: 'Open Sans', sans-serif;
-}
+} */
 
 html,
 body {
     background-color: black;
     width: 100%;
-    overflow-y: visible;
     overflow-x: hidden;
-    user-select: none;
-}
-html {
-    scroll-behavior: smooth;
 }
 
 .header {
     width: 100%;
     height: 100vh;
     background-image:url('assets/main-bg.jpg');
-    background-repeat:no-repeat;
     background-size:cover;
-    background-position: bottom;   
+    background-repeat:no-repeat;
+    background-position: center;   
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 nav {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
     font-style: normal;
@@ -47,171 +45,77 @@ nav {
     text-align: center;
 }
 
-.navigation a {
-    text-decoration: none;
-    color: white !important;
 
-
+.nav-link{
+    color:white  !important;
 }
 
-.navigation a:hover {
-    color: #FBB341 !important;
-
+.nav-link:hover {
+    color: #fab647 !important;
 }
 
-.nav-item,
-.navbar-dark,
-.nav-link {
-    color: white !important;
-}
-
-.nav-item:hover,
-#logo:hover {
-    color: #FBB341 !important;
-}
-
-.nav-style {
-    background-color: rgba(0, 0, 0, 0.75);
-    
-
-}
-
-.header-info {
-    /* margin-top: 10%; */
+.judul {
+    color: #fff;
+    text-align: center;
     width: 100%;
     height: 90%;
-    color: white;
-    text-align: center;
-    /* border: yellow 1px solid; */
 }
 
-.header-title-info {
-    width: 100%;
+.title {
+    margin-top: 5rem;
     font-family: 'Bebas Neue';
-    padding-top: 10%;
-    font-size: 5rem;
-    font-weight: bold;
-    font-style: normal;
-    line-height: 5rem;
-    letter-spacing: 0.3rem;
-    margin-bottom: 3.5625rem;
+    padding-top: 12%;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    width: 100%;
 }
 
-.mini-info {
+.subtitle {
+    margin-top: 2rem;
     font-size: 1.5rem;
-    font-style: normal;
-    font-weight: normal;
-    font-family: 'Bebas Neue', Helvetica, sans-serif;
+    font-family: 'Bebas Neue';
     letter-spacing: 0.1rem;
-    line-height: 2rem;
     flex: 1;
-    margin-bottom: 3.5625rem;
+    margin-bottom: 3rem;
+}
+
+.button-play:hover {
+    background-color: #a57203;
 }
 
 
-.header-info-button:hover {
-    background-color: #E0A800;
-}
 
-.header-scroll-link-wrapper {
-    text-decoration: none;
-    color: white;
-}
 
-.story-scroll-down {
-    margin-bottom: 3.5rem;
-}
-
-.story-scroll-down a {
-    text-decoration: none;
-    color: white;
-}
-
-.story-scroll-down a:hover {
-    color: wheat;
-    text-decoration: none;
-}
-
-.header-scroll-toggle {
-    margin-bottom: 0;
-    letter-spacing: 2px;
-}
-
-.story-scroll-down {
-    animation: scrollDown 1.2s infinite;
-}
-
-@keyframes scrollDown {
-    0% {
-        transform: scale(1);
-    }
-
-    25% {
-        transform: scale(0.5);
-    }
-
-    25% {
-        transform: scale(0.8);
-    }
-
-    10% {
-        transform: scale(1);
-    }
-
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(5px);
-    }
-
-    100% {
-        transform: translateY(10px);
-    }
-}
-
-.spacing {
-    background-color: black;
-}
-
-.games {
+.the-games {
     width: 100%;
     height: 100vh;
     background-image:
         radial-gradient(circle at right, #000, transparent),
     url('assets/the-games-bg.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: bottom;
-
 }
 
-.games-content {
+ .judul-game {
     padding-top: 10%;
     flex-direction: row;
-    width: 90vw !important;
+    /* width: 90vw !important;*/
 }
 
-.gl-left-side {
+.title-game {
+    font-size: 3.5rem;
+    line-height: 1.5rem;
+} 
 
-    color: white;
-    max-width: 30vw !important;
-    /* border: yellow 1px solid; */
+.part-left {
+    margin-top: 3rem;
 }
 
-.gl-right-side {
+.part-right {
     margin-top: 5rem;
 }
 
-.games-mini-info {
-    font-size: 1.5rem;
-}
-
-.gl-h1-info {
-    font-size: 3.5rem;
-    line-height: 1.5rem;
-}
 
 .carousel-indicators li {
     height: 1rem !important;
@@ -226,10 +130,143 @@ nav {
     height: 0.5rem !important;
 }
 
-.icon-costum-left {
+.indicator-left {
     margin-left: -6rem;
 }
 
-.icon-costum-right {
+.indicator-right {
     margin-right: -6rem;
+}
+
+.features {
+    width: 100%;
+    height: 100vh;
+    background-image:url('assets/features.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+
+.features-content {
+    padding-top: 14rem;
+}
+
+
+ .kolom-pas {
+    margin-right: -1.5rem;
+}
+
+.subtitle-kolom {
+    font-size: 1.5rem;
+    color: #faaf36;
+    letter-spacing: 0.2rem;
+}
+
+.subtitle-bawah {
+    color: white;
+    font-size: 1rem;
+}
+
+.system {
+    width: 100%;
+    height: 100vh;
+    background-image:
+        radial-gradient(50% 90% at 65% 40%,
+            rgba(0, 0, 52, 0) 0%,
+            rgba(10, 10, 10, 0.50) 50%,
+            #000 95%),
+        url('assets/requirements.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+    
+}
+
+.judul-req {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: -1.5rem;
+}
+
+@media (max-width:991px) {
+    .rq-table-title{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+}
+
+
+.rq-table-title {
+    font-size: 60px;
+    color: white;
+    /* line-height: 3rem; */
+}
+
+.table-content-sys {
+    max-width: 40vw !important;
+    margin-top: 7rem;
+}
+
+@media (max-width:911px) {
+    .table-content-sys{
+        margin-top: 4rem;
+    }
+}
+
+.requirements-info {
+    color: #FBB341;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.requirements-info-content {
+    color: white;
+    line-height: 1rem;
+}
+
+.table-bordered th {
+    border: #1f2024 1px solid !important;
+}
+
+.table-bordered td {
+    border: #1f2024 1px solid !important;
+}
+
+.score {
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/top-score-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+}
+
+.score-content {
+    max-width: 100vw !important;
+}
+
+.card {
+    background-color: #141414 !important;
+    width: 25rem !important;
+}
+
+.card-title {
+    color: #FBB341 !important;
+}
+
+.card-info-top {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.card-subtitle {
+    color: #a1a1a1 !important;
+}
+
+.card-text {
+    color: #a1a1a1 !important;
 }
